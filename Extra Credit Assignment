@@ -1,0 +1,14 @@
+n=int(input("Enter the number for Calculation: ")) 
+
+sum1= 0 #Declaring a variable whose sum equal to zero
+
+for i in range(1,n): #Loop will run from 1 to 999
+    if i %5==0 or i%3==0: #Accepting an integers which are either divisible by 5 or 3
+        sum1= sum1+i #Adding the divisible integers with existing some values after each iteration
+        
+print("The sum of all the multiples of 3 or 5 below {} is: {}".format(n,sum1) ) #Print the value
+
+
+for i in range(1,1000): 
+    if i %5==0 or i%3==0: 
+        print (i)
